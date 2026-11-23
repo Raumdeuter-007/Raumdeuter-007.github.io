@@ -1,5 +1,21 @@
 title: Raumdeuter-007
 description: A small space to share some of my thoughts.
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
+minimal_mistakes_skin: dark
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
